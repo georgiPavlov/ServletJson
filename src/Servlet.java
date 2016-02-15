@@ -17,7 +17,7 @@ import java.io.PrintWriter;
 @WebServlet("/")
 public class Servlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String uglyJSONString = request.getParameter("json");
+        String uglyJSONString = request.getParameter("POST");
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         JsonElement je= null;
         try{
